@@ -10,6 +10,7 @@ Is not mine :)
 - python 2.7 & pip
 - pika
 
+### Python dep
 
     $ sudo apt-get install python-pip
     $ pip install --user pika
@@ -68,7 +69,7 @@ For example:
 
 So I just run it as sudo -,-
 
-# Notes
+## Notes
 
 All the downloaded messages are saved in the *data* directory. The files are
 under gitignore so no risk to expose them.

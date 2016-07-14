@@ -1,7 +1,8 @@
-# Import/Export tools
+# RabbitMQ import/export scripts
 
-Yeah not the best but it works.
-I'll get it better later.
+The export tool is just a docker container around this tool [rabbitmq-dump-queue](https://github.com/dubek/rabbitmq-dump-queue).
+
+Is not mine :)
 
 # How to
 

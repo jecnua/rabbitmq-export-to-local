@@ -9,17 +9,17 @@ Is not mine :)
 Clone this repo
 Build your image locally (don't want to push it anywhere for now)
 
-    docker built -t jecnua/rabbitmq-export .
+    $ docker built -t jecnua/rabbitmq-export .
 
 Run it
 
-    docker run -it \
+    $ docker run -it \
     -v $PWD/data:/data \
     jecnua/rabbitmq-export
 
 Now pull down the data you need
 
-    rabbitmq-dump-queue \
+    $ rabbitmq-dump-queue \
     -uri="amqp://<user>:<pass>@<url>:<port>/" \
     -queue=<queue_name> \
     -max-messages=2000 \
@@ -29,6 +29,10 @@ Check the results
 
     $ du -sh data/
     344M data/
+
+Now that you have the data, run RabbitMQ locally:
+
+    $./rabbit_00_run_rabbit_locally.sh
 
 ### On ubuntu 14.04
 

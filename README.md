@@ -32,7 +32,12 @@ Check the results
 
 Now that you have the data, run RabbitMQ locally:
 
-    $./rabbit_00_run_rabbit_locally.sh
+    $ ./rabbit_00_run_rabbit_locally.sh
+    $ docker ps
+
+As a last step push all the messages on the queue:
+
+    $ ./01_built_queue.py
 
 ### On ubuntu 14.04
 

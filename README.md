@@ -7,9 +7,9 @@ Is not mine :)
 ## Prerequisites
 
 - docker
-
 - python 2.7 & pip
 - pika
+
 
     $ sudo apt-get install python-pip
     $ pip install --user pika
@@ -53,8 +53,18 @@ As a last step push all the messages on the queue:
 
 You need it to run as sudo or try to solve... a lot of problems:
 
+https://docs.docker.com/engine/installation/linux/ubuntulinux/
+
+For example:
+
 - Old packages
 - Error: _Are you trying to connect to a TLS-enabled daemon without TLS?_
+
+[link 1](https://stackoverflow.com/questions/29704059/docker-are-you-trying-to-connect-to-a-tls-enabled-daemon-without-tls)
+
+[link 2](https://stackoverflow.com/questions/27528337/am-i-trying-to-connect-to-a-tls-enabled-daemon-without-tls)
+
+[link 3](https://stackoverflow.com/questions/27978324/why-install-docker-on-ubuntu-should-be-sudo-apt-get-install-docker-io)
 
 So I just run it as sudo -,-
 

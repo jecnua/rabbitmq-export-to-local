@@ -4,7 +4,17 @@ The export tool is just a docker container around this tool [rabbitmq-dump-queue
 
 Is not mine :)
 
-# How to
+## Prerequisites
+
+- docker
+
+- python 2.7 & pip
+- pika
+
+    $ sudo apt-get install python-pip
+    $ pip install --user pika
+
+## How to
 
 Clone this repo
 Build your image locally (don't want to push it anywhere for now)
@@ -19,7 +29,7 @@ Run it
 
 Now pull down the data you need
 
-    $ rabbitmq-dump-queue \
+    $ time rabbitmq-dump-queue \
     -uri="amqp://<user>:<pass>@<url>:<port>/" \
     -queue=<queue_name> \
     -max-messages=2000 \
@@ -37,7 +47,7 @@ Now that you have the data, run RabbitMQ locally:
 
 As a last step push all the messages on the queue:
 
-    $ ./01_built_queue.py
+    $ time ./01_built_queue.py
 
 ### On ubuntu 14.04
 

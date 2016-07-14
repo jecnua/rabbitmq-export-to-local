@@ -73,3 +73,9 @@ So I just run it as sudo -,-
 
 All the downloaded messages are saved in the *data* directory. The files are
 under gitignore so no risk to expose them.
+
+## TODO
+
+- Call the rabbitmq-dump script automatically and use ENV to set parameters
+- Docker composer to pull up all automatically
+- Avoid the hard system dependency on python by using a container

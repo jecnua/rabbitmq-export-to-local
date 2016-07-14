@@ -8,26 +8,26 @@ I'll get it better later.
 - Clone this repo
 - Build your image locally (don't want to push it anywhere for now)
 
-    docker built -t jecnua/rabbitmq-export .
+      docker built -t jecnua/rabbitmq-export .
 
 - Run it
 
-    docker run -it \
-    -v $PWD/data:/data \
-    jecnua/rabbitmq-export
+      docker run -it \
+      -v $PWD/data:/data \
+      jecnua/rabbitmq-export
 
 - Now pull down the data you need
 
-    rabbitmq-dump-queue \
-    -uri="amqp://<user>:<pass>@<url>:<port>/" \
-    -queue=<queue_name> \
-    -max-messages=2000 \
-    -output-dir=/data
+      rabbitmq-dump-queue \
+      -uri="amqp://<user>:<pass>@<url>:<port>/" \
+      -queue=<queue_name> \
+      -max-messages=2000 \
+      -output-dir=/data
 
 - Check the results
 
-    $ du -sh data/
-    344M data/
+      $ du -sh data/
+      344M data/
 
 ### Notes on ubuntu 14.04
 

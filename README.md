@@ -30,12 +30,16 @@ Check the results
     $ du -sh data/
     344M data/
 
-### Notes on ubuntu 14.04
+### On ubuntu 14.04
 
 You need it to run as sudo or try to solve... a lot of problems:
 
-- Are you trying to connect to a TLS-enabled daemon without TLS?
+- Old packages
+- Error: _Are you trying to connect to a TLS-enabled daemon without TLS?_
 
-# dump all the messages in a directory
+So I just run it as sudo -,-
 
-Mount a volume
+# Notes
+
+All the downloaded messages are saved in the *data* directory. The files are
+under gitignore so no risk to expose them.
